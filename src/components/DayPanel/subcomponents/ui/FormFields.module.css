@@ -1,0 +1,56 @@
+.inputGroup {
+  margin-bottom: 24px;
+}
+
+.labelRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 8px;
+  padding: 0 4px;
+}
+
+.labelRow label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: -0.2px;
+}
+
+.charCount {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  font-size: 15px;
+  color: var(--text-main);
+  transition: all 0.2s;
+  box-shadow: var(--shadow-inner);
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px var(--primary-light);
+}
+
+.inputGroup input::placeholder,
+.inputGroup textarea::placeholder {
+  color: #94a3b8;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
